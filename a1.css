@@ -3,8 +3,14 @@
     clear:both;     /*不允许有浮动值*/
     display:block;
 }
-a{
-    color:inherit;      /*继承父级的颜色*/
+body{
+    margin: 0px;
+}
+.topNavBar{
+    padding-top:12px;
+    padding-bottom: 12px;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 .topNavBar>nav>ul>li{
     float:left;  /*左浮动*/
@@ -22,16 +28,31 @@ a{
     text-decoration:none; /*清楚字体默认样式*/
     font-weight:bold;  /*字体加粗*/
     border-bottom:3px solid transparent; /*透明边框*/
+    border-top: 3px solid transparent;
     padding-bottom:5px;    /*设置下方边框*/
     padding-top:5px;
     display: block;    /*使li标签可以包裹住a标签*/
 }
 .topNavBar>nav{
-    float:right;
+    float:right; /*右浮动*/
+    padding-top:1px; /*为nav增加1像素用来对齐*/
 }
 .topNavBar>a{
     float:left;
+    color:inherit;  /*继承父级的颜色*/
+    text-decoration:none; /*删除文本默认样式*/
 }
 .topNavBar>nav>ul>li>a:hover{   /*鼠标悬浮*/
-    border-bottom:3px solid #e06567;
+    border-bottom:3px solid #e06567; /*鼠标悬浮出现的边框*/ 
+}
+.topNavBar .logo{
+    font-size: 24px;
+    font-family: Arial Black;
+}
+.card{
+    margin-left:-3px; /*减少RS与card之间的间距*/
+    color: #9A9DA2;
+}
+.rs{
+    color: #E6686A
 }
