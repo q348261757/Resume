@@ -5,7 +5,19 @@
 }
 body{
     margin: 0px;
+    background-color:#efefef; 
 }
+.banner{
+   background-image: url(./img/rs-cover.jpg); /*背景图片*/
+   height: 515px;  /*背景图片高度*/
+   background-position: center center; /*图片居中*/
+   background-size: cover; /*背景图片大小为覆盖*/
+}
+.banner .curtain{
+    height: 515px;
+    background-color:rgba(44, 51, 64, 0.8);
+    /*设置遮蔽的颜色*/
+} 
 .topNavBar-inner{
     padding-left:16px;
     padding-right: 16px; 
@@ -57,11 +69,34 @@ body{
 }
 .card{
     margin-left:-3px; /*减少RS与card之间的间距*/
-    color: #9A9DA2;
+    color: #9A9DA2;  /*logo颜色*/
 }
 .rs{
-    color: #E6686A
+    color: #E6686A  /*logo颜色*/
 }
-.banner{    
-    height: 515px;
+.fiche{
+    border:1px solid red; 
+    max-width: 940px;  /*设置最大宽度 非定死宽度*/
+    margin-left: auto;
+    margin-right: auto; /*设置水平居中*/
+    background-color: #ffffff;
+}
+.welcome{
+    background: #e6686a; /*背景色*/
+    display: inline-block;  
+    color: white;   /*字体颜色*/
+    padding: 4px 16px;  /*设置大小*/
+    line-height: 21px;
+    position: relative;  /*相对定位*/
+}
+.triangle{
+  border: solid transparent;  /*设置透明边框*/
+  height: 0px; 
+  width: 0px;      /*设置div大小和边框*/
+  border-left-color: #e6686a;       /*设置上边框颜色*/
+  border-width:0px 0px 14px 13px ;  /*设置边框上下左右的宽度*/
+  display:block;     /*内部元素转块元素*/
+  position: absolute; /*绝对定位*/
+  top: 100% ;  /*相对父元素最上面为100%的距离*/
+  left: 5px;   /*距离父元素最左面4像素*/
 }
