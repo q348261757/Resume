@@ -3,6 +3,16 @@
 <head>
   <title>My resume</title>
   <link rel="stylesheet" href="./a1.css">
+  <script src="//at.alicdn.com/t/font_727253_fniuu81rugp.js"></script> 
+  <style type="text/css">
+    .icon {
+       width: 1em; height: 1em;
+       vertical-align: -0.15em;
+       fill: currentColor;
+       overflow: hidden;
+    }      
+</style>
+ <!--引入链接图标-->
 </head>
 <body>
   <div class="topNavBar ">  <!--最上方导航和logo-->
@@ -30,7 +40,8 @@
     <div class="curtain"></div> <!--设置背景图阴影遮蔽-->
   </div>   
    <main>
-    <div class="fiche">                 <!--名片-->
+ <div class="introduce">   <!--个人信息卡片-->
+    <div class="fiche clearfix">                 <!--名片-->
      <div class="picture">           <!--左侧头像图片-->
       <img src="./img/2.jpg" alt="头像">
   </div>
@@ -47,23 +58,37 @@
          <dd>26</dd>
        <dt>期望工作地点:</dt>
          <dd>长春</dd>
-       <dd>邮箱:</dd>
-         <dt>348261757@qq.com</dt>
-       <dd>手机:</dd>
-         <dt>13043324533</dt>
+       <dt>邮箱:</dt>
+         <dd>348261757@qq.com</dd>
+       <dt>手机:</dt>
+         <dd>13043324533</dd>
      </dl>
     </div>
-    <div class="media">              <!--跳转链接-->
-      <a href="#"><img src="#" alt=".."></a>  
-      <a href="#"><img src="#" alt=".."></a>
-      <a href="#"><img src="#" alt=".."></a>
-      <a href="#"><img src="#" alt=".."></a>
-      <a href="#"><img src="#" alt=".."></a>
-      <a href="#"><img src="#" alt=".."></a>
-      <a href="#"><img src="#" alt=".."></a>
-    </div>
   </div>
-</div> 
+</div>
+    <div class="media">   <!--跳转链接-->
+        <a href="#"> 
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-github"></use>
+          </svg> 
+        </a>
+          <a href="#"> 
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-juejin"></use>
+            </svg> 
+          </a>
+            <a href="#"> 
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-weibo1"></use>
+              </svg> 
+            </a>
+              <a href="#"> 
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-twitter"></use>
+                </svg> 
+              </a>
+    </div> 
+  </div>
 <a href="#" class="button">下载PDF简历</a>
 <p>##########################<br>
   #########################</p> 

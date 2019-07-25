@@ -3,10 +3,18 @@
     clear:both;     /*不允许有浮动值*/
     display:block;
 }
+*{
+    margin: 0;
+    padding: 0;   /*清楚所有标签的默认边距*/
+}
+a{
+    text-decoration:none; /*删除所有a标签默认样式*/
+}
 body{
     margin: 0px;
     background-color:#efefef; 
 }
+   
 .banner{
    background-image: url(./img/rs-cover.jpg); /*背景图片*/
    height: 515px;  /*背景图片高度*/
@@ -15,7 +23,7 @@ body{
 }
 .banner .curtain{
     height: 515px;
-    background-color:rgba(44, 51, 64, 0.8);
+    background-color:rgba(44, 51, 64, 0.8);;
     /*设置遮蔽的颜色*/
 } 
 .topNavBar-inner{
@@ -58,7 +66,6 @@ body{
 .topNavBar a{
     float:left;
     color:inherit;  /*继承父级的颜色*/
-    text-decoration:none; /*删除文本默认样式*/
 }
 .topNavBar nav>ul>li>a:hover{   /*鼠标悬浮*/
     border-bottom:3px solid #e06567; /*鼠标悬浮出现的边框*/ 
@@ -74,12 +81,12 @@ body{
 .rs{
     color: #E6686A  /*logo颜色*/
 }
-.fiche{
-    border:1px solid red; 
+.introduce{ 
     max-width: 940px;  /*设置最大宽度 非定死宽度*/
     margin-left: auto;
     margin-right: auto; /*设置水平居中*/
     background-color: #ffffff;
+    margin-top: -345px; /*设置个人信息卡片位置*/
 }
 .welcome{
     background: #e6686a; /*背景色*/
@@ -88,6 +95,7 @@ body{
     padding: 4px 16px;  /*设置大小*/
     line-height: 21px;
     position: relative;  /*相对定位*/
+    margin-bottom:28px; /*通过增加外边距拉开与姓名的距离*/
 }
 .triangle{
   border: solid transparent;  /*设置透明边框*/
@@ -99,4 +107,68 @@ body{
   position: absolute; /*绝对定位*/
   top: 100% ;  /*相对父元素最上面为100%的距离*/
   left: 5px;   /*距离父元素最左面4像素*/
+}
+hr{
+    border: none;
+    height: 0;
+    border-top: solid 1px #dedede;
+}
+.fiche{
+    padding-bottom: 38px; 
+    /*设置个人信息与跳转链接的距离*/
+}
+
+.fiche .picture{
+    float: left;
+    margin-top: 57px;   /*设置照片介绍的位置*/
+    margin-left: 52px;
+}
+.fiche .text{
+   float:left;
+   margin-top: 57px;
+   margin-left: 65px;   /*设置个人介绍的位置*/
+   width: 470px;        
+}
+.text .profiler h1{
+    padding-bottom: 5px; /*设置与p标签之间的距离*/
+}
+.text .profiler hr{
+    margin-bottom: 26px;
+    margin-top:27px;     /*设置分割线上下的距离*/
+}
+.text .profiler dl dt{
+    float: left;      
+    width: 30%;     /*浮动后利用宽度是其自动换行*/
+    font-size: 15px;
+    font-weight: bold;  /*字体加粗*/
+    margin-top: 15px; /*拉开距离*/
+}
+.text .profiler dl dd{
+    float: left;
+    width:70%;
+    color: #9da0a7;
+    font-size: 15px; 
+    margin-top: 15px;
+}
+.media{
+    background-color: #e8676b;
+    text-align: center;;  /*使图标居中*/
+}
+.media a{
+    display: inline-block;
+    border-radius:50%;  /*使边框变成圆形*/
+    width: 50px;
+    height: 30px;       
+    line-height: 50px;
+    padding: 10px 0 10px 0;
+    margin: 10px 8px;     
+}
+.media a:hover{
+    background: #CF5D5F;
+}
+.media  svg{
+    width:30px;
+    height:30px;
+    fill:white;
+    vertical-align: top; 
 }
